@@ -2,7 +2,7 @@ package br.com.digital.innovation.one.aula1.FatorialRecursivo;
 
 public class FatorialTailCall {
     public static void main(String[] args) {
-        System.out.println(fatorialA(100000));
+        System.out.println(fatorialA(5));
     }
     public static double fatorialA( double valor ) {
         return fatorialComTailCall(valor,1);

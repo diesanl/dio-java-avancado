@@ -5,11 +5,11 @@ public class FatorialRecursivo {
         System.out.println(fatorial(5));
     }
 
-    public static int fatorial( int value ) {
-        if ( value == 1 ) {
+    public static int fatorial(int value) {
+        if (value == 1) {
             return value;
         } else {
-            return value * fatorial((value -1));
+            return value * fatorial((value - 1));
         }
     }
 

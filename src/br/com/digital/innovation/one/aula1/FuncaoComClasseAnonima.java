@@ -8,6 +8,6 @@ public class FuncaoComClasseAnonima {
                 return "Sr. "+valor;
             }
         };
-        System.out.println(colocarPrefixoSenhorNaString.gerar("Joao"));
+        System.out.println(colocarPrefixoSenhorNaString.gerar("World"));
     }
 }

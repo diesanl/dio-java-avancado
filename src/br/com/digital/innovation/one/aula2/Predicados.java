@@ -4,8 +4,11 @@ import java.util.function.Predicate;
 
 public class Predicados {
     public static void main(String[] args) {
-        Predicate<String> estaVazio = String::isEmpty;
+        //this method reference
+//        Predicate<String> estaVazio = String::isEmpty;
+        //or this
+        Predicate<String> estaVazio = text -> text.isEmpty();
         System.out.println(estaVazio.test(""));
-        System.out.println(estaVazio.test("Joao"));
+        System.out.println(estaVazio.test("Diego"));
     }
 }
