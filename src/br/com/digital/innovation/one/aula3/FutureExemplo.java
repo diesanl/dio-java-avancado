@@ -82,7 +82,7 @@ class Quarto extends Comodo {
 
         return Arrays.asList(
                 this::arrumarACama,
-                this::varretOQuarto,
+                this::varrerOQuarto,
                 this::arrumarGuardaRoupa
         );
     }
@@ -94,7 +94,7 @@ class Quarto extends Comodo {
         return arrumar_o_guarda_roupa;
     }
 
-    private String varretOQuarto() throws InterruptedException {
+    private String varrerOQuarto() throws InterruptedException {
         Thread.sleep(7000);
         String varrer_o_quarto = "varrer o quarto";
         System.out.println(varrer_o_quarto);

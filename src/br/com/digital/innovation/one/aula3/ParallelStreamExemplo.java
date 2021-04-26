@@ -4,11 +4,13 @@ import java.util.stream.IntStream;
 
 public class ParallelStreamExemplo {
     public static void main(String[] args) {
+        //serial
         long inicio = System.currentTimeMillis();
         IntStream.range(1,100000).forEach(num -> fatorial(num));
         long fim = System.currentTimeMillis();
         System.out.println("Tempo de execução Serial :: "+(fim-inicio));
 
+        //parallel
         inicio = System.currentTimeMillis();
         IntStream.range(1,100000).parallel().forEach(num -> fatorial(num));
         fim = System.currentTimeMillis();
